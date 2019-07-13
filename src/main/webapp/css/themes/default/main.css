@@ -1,0 +1,197 @@
+/**
+ * @author Roy
+ * @date 4/2/2013
+ */
+
+body.theme, #left { background:#dfe8f6; }
+
+
+/*------------ 文字 ------------*/
+.font, body { color: #000; }
+.font.ui { color: #15428b; }
+.font.gray { color: #CCC; }
+.font.warn { color: #FF0000; }
+.font.done { color: #008040; }
+.font.highlight { color: #FF6600; }
+
+.font.underline:hover { color: #0000FF; }
+
+
+/*------------ 链接 ------------*/
+a { color: #15428b; }
+a.static { color: #15428b; }
+a.underline:hover { color:#FF6600; }
+a.highlight { color:#FF6600; }
+a.highlight:hover { color:#15428b; }
+a.block:hover { background-color: #ffff00; }
+
+/*------------ 背景 ------------*/
+.bg.light { background-color: #f9f9f9; }
+.bg.highlight { background-color: #ffff99; }
+.bg.mouse_light { background-color: #e9f3f3; }
+
+
+/*------------ 分隔线 ------------*/
+hr { border-top:1px solid #3399cc;}
+/* 虚线 */
+hr.dash { border-top:1px dashed #3399cc;}
+/* 双划线 */
+hr.double { border-top:3px double #3399cc;}
+/* 双色线 */
+hr.double_color { border-top:10px groove #3399cc;}
+
+
+/*------------ 边框 ------------*/
+/* 下划线边框 */
+.border.underline { border-color: #DAE2F2; }
+
+
+/*------------ 按钮 ------------*/
+/* 默认 */
+.btn, .btn.disabled:hover, .btn.disabled:active { background: url(./images/btn.png) 0 -150px; }
+.btn span, .btn.disabled:hover span, .btn.disabled:active span { background: url(./images/btn.png) 100% -150px; color: #15428b;}
+.btn:hover { background: url(./images/btn.png) 0 -450px; }
+.btn:hover span { background: url(./images/btn.png) 100% -450px; }
+.btn:active { background: url(./images/btn.png) 0 -350px; }
+.btn:active span { background: url(./images/btn.png) 100% -350px; }
+
+
+/*------------ Tree ------------*/
+.tree div div { background:url(./images/tree/tree.png) no-repeat;}
+.tree .folder_collapsable, .tree .folder_expandable, .tree .file { background:url(./images/tree/folder.png) no-repeat;}
+.tree .checked, .tree .unchecked, .tree .indeterminate { background:url(./images/tree/check.png) no-repeat;}
+.tree ul { }
+.tree li a, .tree li span { color:#15428B;}
+.tree .hover { background:#f5f5f5;}
+.tree .selected { background-color:#e8edf3;}
+
+
+/*------------ Header Bar ------------*/
+.header_bar { border-color:#99BBE8; background-image:url(./images/toggle_sidebar.png); }
+
+
+/*------------ Panel面板 ------------*/
+.panel .header { border-color:#99BBE8; background-image:url(./images/toggle_sidebar.png); }
+.panel .expandable, .panel .collapsable { background-image:url(./images/toggle_vertical.png); }
+.panel .content { border-color:#99BBE8; background-color: #EFF3F6; }
+
+
+/*------------ Fieldset ------------*/
+.fieldset .header { color:#000; }
+.fieldset .mask { background-color:#fff;}
+.fieldset .content { border-color: #ccc; background-color:#f9f9f9; }
+
+
+/*------------ 表格 ------------*/
+/* Grid Table */
+.grid table, table.normal, table.content { border-color: #FFF; }
+.grid .thead_div th, table.normal th, .grid .thead_div th:hover, table.normal th:hover { background-color: #f0f0f0; background-image:url(./images/bg_th.png); background-repeat: repeat-x; background-position: 0 100%;}
+.grid .thead_div th:hover, table.normal th:hover { background-color: #fbfbfb; }
+
+.grid th, .grid td, table.normal th, table.normal td, table.normal thead, table.content td { border-color: #d0d0d0; }
+
+/* Content Table */
+table.content .label { background-color:#eaeaea; }
+
+/* No border Table */
+table.noborder .label { background:none; }
+
+/* Nav Table */
+.nav_table_div table.nav_table { border-color: #3399cc }
+.nav_table_div table.nav_table thead tr { background-color: #DAE2F2; border-color: #3399cc }
+.nav_table_div table.nav_table tbody tr { border-color: #3399cc }
+
+/* Information Table */
+table.info {  }
+table.info .header, table.info .header td, table.info .body, table.info .body td { border-color: #3399cc; color: #15428b }
+
+/* Black Table */
+table.black th, table.black td, table.black thead { border-color: black; }
+table.black th {  background: transparent; }
+table.black th:hover { background: transparent; }
+
+
+/*------------ 表单 ------------*/
+input[type="text"], input[type="password"], textarea, select { border-color:#a2bac0 #99bbe8 #99bbe8 #a2bac0; background-color:#FFF; }
+input[type="text"].error, input[type="password"].error, textarea.error, select.error { background-color: #ffcc33 }
+input[type="text"].readonly, input[type="password"].readonly, textarea.readonly { border-color:#9eabb3 #d5dbdf #d5dbdf #9eabb3; background-color:#F6F6F6; }
+input[type="text"].disabled, input[type="password"].disabled, textarea.disabled { border-color:#9eabb3 #d5dbdf #d5dbdf #9eabb3; background-color:#F6F6F6; }
+input[type="text"].mandatory, input[type="password"].mandatory, textarea.mandatory { border-bottom:1px solid red }
+select.mandatory { border-bottom:1px solid red }
+
+
+/*------------ Tabs ------------*/
+.ui-tabs .ui-tabs-panel { border-color: #c0c0c0; }
+
+
+/*------------ 分页 ------------*/
+#pager ul.pages { color:#15428b; }
+#pager ul.pages li:hover { background-color: #FFF; }
+#pager ul.pages li.interval:hover { background-color: transparent; color: #003399; }
+#pager ul.pages li.pgCurrent { background-color: #FFF; }
+#pager ul.pages li.pgEmpty { background-color: transparent; color: #15428b; }
+#pager input.pagerInput { border-color: #99BBE8; }
+
+
+/*------------ 工具栏 ------------*/
+.toolbar, .button_bar, #pager_bar { border-color: #99BBE8; background: url(./images/bg_toolbar.jpg) repeat-x; }
+
+
+/*------------ 按钮栏 ------------*/
+.toolbar li.line { background: url(./images/line_list.png) no-repeat; background-position:3px 5px;}
+
+
+/*------------ HT Frame ------------*/
+#ht_frame #frame_split, #ht_frame_vertical #frame_split { border-color:#99BBE8; background:#dfe8f6; }
+#ht_frame #frame_split_proxy, #ht_frame_vertical #frame_split_proxy { border-color:#c0c0c0; background:#CCC; }
+
+
+/*------------ Top ------------*/
+#top { background: url(./images/bg_header.png) repeat-x;}
+
+
+/* 列表分隔线 */
+#top .nav li { background: url(./images/line_list.png) no-repeat; background-position:0px 2px;}
+/* 超链接显示颜色 */
+#top .nav li a { color:#15428b;}
+
+#nav_menu { background-color: #D5E2F2; background: url(./images/bg_nav_menu.png) repeat-x;}
+/* 分隔线 */
+#nav_menu li { background:url(./images/line_list.png) no-repeat 0px 5px; }
+/* 默认文字颜色 */
+#nav_menu li a, #nav_menu li span, .toolbar li a, .toolbar li span { color:#15428b; }
+.toolbar li a:disabled, .toolbar li span { color:#15428b; }
+/* 选中文字颜色 */
+#nav_menu li.selected a span { color:#FF6600; }
+/* 悬停背景 */
+#nav_menu a:hover, .toolbar a:hover { background: url(./images/btn.png) 0 -450px; }
+#nav_menu a:hover span, .toolbar a:hover span { background: url(./images/btn.png) 100% -450px; }
+#nav_menu a:hover, .toolbar a:disabled:hover { background: url(./images/btn.png) 0 0; }
+#nav_menu a:hover span, .toolbar a:disabled:hover span { background: url(./images/btn.png) 0 0; }
+/* 选中背景 */
+#nav_menu li.selected a { background: url(./images/btn.png) 0 -150px;  }
+#nav_menu li.selected a span { background: url(./images/btn.png) 100% -150px; }
+
+
+/*------------ Left ------------*/
+.toggle_collapse, .toggle_collapse div { background-image:url(./images/toggle_sidebar.png); }
+.toggle_collapse { border-color:#99BBE8; background-color:#dfe8f6; }
+.toggle_collapse h2 { color:#15428B; }
+#sidebar_s .collapse { border-color: #99bbe8; background:#eff5f6; }
+#sidebar_s .collapse:hover { background:#f5f9fa; }
+#split_bar_proxy { border-color:#c0c0c0; background:#CCC; }
+#container { border-color:#99BBE8; }
+
+
+/*------------ Accordion ------------*/
+.accordion .accordion_header, .accordion .accordion_header h2, .accordion .accordion_header h2 span { color:#15428B; background-image:url(./images/accordion.png); }
+.accordion { border-color:#99bbe8; background:#FFF;}
+.accordion .accordion_header { background-color:#eaf4ff;}
+.accordion .accordion_content { border-color:#99bbe8;}
+
+
+/*------------ Bottom ------------*/
+#bottom { color:#15428b; }
+
+/*------------ Loading ------------*/
+.loading.dialog { background-color:#dfe8f6; border-color:#99bbe8; }

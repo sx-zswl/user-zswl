@@ -1,0 +1,25 @@
+/*!
+ * print.css v1.0.0
+ * http://printstylesheet.com/
+ *
+ * Copyright (c) 2011 David Bushell
+ * Dual licensed under the BSD or MIT licenses: http://printstylesheet.com/license.txt
+ 
+ * Author: Roy on May 14, 2014
+ */
+
+/* use a media query to limit the CSS to only print devices, like a printer */
+@media only print
+{
+	.noprint { display: none !important; }
+}
+
+a { text-decoration: none; color:black; }
+
+table caption { font-size:15pt; font-weight: bold; }
+table.print { empty-cells: show; border-collapse: collapse; width:96%; }
+table.print thead th, table.print tbody td { border:1px solid black; padding:2px; }
+table.print thead th { font-weight: bold; }
+table.print tfoot td { font-size:9pt; }
+
+.noprint { display: none; }
